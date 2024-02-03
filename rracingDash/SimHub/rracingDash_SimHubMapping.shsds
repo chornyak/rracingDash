@@ -1,0 +1,205 @@
+{
+  "AutomaticReconnect": false,
+  "SerialPortName": "COM4",
+  "StartupDelayMs": 0,
+  "IsConnecting": false,
+  "IsEnabled": false,
+  "LogIncomingData": false,
+  "IsConnected": false,
+  "BaudRate": 115200,
+  "UpdateMessages": [
+    {
+      "Message": {
+        "Expression": "'clock.txt=\"'+format([DataCorePlugin.CurrentDateTime],'hh:MM:ss')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'rpmbar.val='+format([DataCorePlugin.GameData.NewData.CarSettings_CurrentDisplayedRPMPercent],'00')+'|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 60
+    },
+    {
+      "Message": {
+        "Expression": "'gear.txt=\"'+[Gear]+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'rpm.txt=\"'+format(max(0,isnull([datacoreplugin.gamedata.newdata.rpms],0)),'0')+'\"|'\r\n\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 30
+    },
+    {
+      "Message": {
+        "Expression": "'pos.txt=\"'+[PlayerLeaderboardPosition]+'\"|'\r\n\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'lap.txt=\"'+[CurrentLap]+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'delta.txt=\"'+(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaSeconds],0) >=0?'+':'')+format(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaSeconds],0) ,'0.00')+'\"|'\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 10
+    },
+    {
+      "Message": {
+        "Expression": "'fuel.txt=\"'+format(isnull([DataCorePlugin.GameData.NewData.Fuel],0),'0.0')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'fuelavg.txt=\"'+format(isnull([DataCorePlugin.Computed.Fuel_LitersPerLap],0),'0.0')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'fuellaps.txt=\"'+format(isnull([DataCorePlugin.Computed.Fuel_RemainingLaps],0),'0')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'laptime.txt=\"'+replace(format([DataCorePlugin.GameData.NewData.LastLapTime],'m\\\\:ss\\\\:ff'),'0:00:00','0:00:00')+'\"|'\r\n\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'bestlaptime.txt=\"'+replace(format([PersistantTrackerPlugin.AllTimeBest],'m\\\\:ss\\\\:ff'),'0:00:00','0:00:00')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'bbal.txt=\"'+[BrakeBias]+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'engmap.txt=\"'+replace([EngineMap],'-1',' ')+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'abs.txt=\"'+replace([ABSLevel],'0',' ')+'\"|'\r\n\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'tccut.txt=\"'+replace([TCActive],'0',' ')+'\"|'"
+      },
+      "IsEnabled": false,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'tc.txt=\"'+replace([TCLevel],'0',' ')+'\"|'\r\n\r\n"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 0
+    },
+    {
+      "Message": {
+        "Expression": "'tfltempc.txt=\"'+format(isnull([TyreTemperatureFrontLeft],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'trftempc.txt=\"'+format(isnull([TyreTemperatureFrontRight],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'tbltempc.txt=\"'+format(isnull([TyreTemperatureRearLeft],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'tbrtempc.txt=\"'+format(isnull([TyreTemperatureRearRight],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'brakefl.txt=\"'+format(isnull([BrakeTemperatureFrontLeft],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'brakefr.txt=\"'+format(isnull([BrakeTemperatureFrontRight],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'brakerl.txt=\"'+format(isnull([BrakeTemperatureRearLeft],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    },
+    {
+      "Message": {
+        "Expression": "'brakerr.txt=\"'+format(isnull([BrakeTemperatureRearRight],0),'0')+'°'+'\"|'"
+      },
+      "IsEnabled": true,
+      "MaximumFrequency": 5
+    }
+  ],
+  "OnConnectMessage": {
+    "Expression": ""
+  },
+  "OnDisconnectMessage": {
+    "Expression": ""
+  },
+  "DtrEnable": true,
+  "RtsEnable": true,
+  "EditorExpanded": true,
+  "Name": "Custom Serial device",
+  "Description": "Serial device",
+  "LastErrorDate": "2024-02-02T11:32:06.3638584-05:00",
+  "LastErrorMessage": null,
+  "IsFreezed": false,
+  "SettingsBuilder": {
+    "Settings": [],
+    "IsEditMode": true
+  }
+}

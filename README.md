@@ -80,7 +80,7 @@ Import the mapping settings using the file in /SimHub/
 If you are succesful the session clock on the display should begin 
 updating as it is set to display the current time. 
 
-## 4. Optional: Print the included enclosure
+## Optional: Print the included enclosure
 
 .stl Files are included in the /stl/ folder of a simple enclosure
 that matches the Fanatec CSL DD aesthetic. 

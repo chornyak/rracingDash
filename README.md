@@ -20,6 +20,8 @@ Note: Review sketch comments on specific changes required for the Micro.
 
 Final product using the hardware outline belowe: https://www.youtube.com/watch?v=PJmJ7qeRTEA
 
+![alt text](https://github.com/chornyak/rracingDash/images/demo.jpg?raw=true)
+
 The dash UI design is inspired by Lovely-Dashboard. All graphics in rracingDash 
 were created from scratch but follow the same design principles. If you want 
 a more feature-rich dash option I highly recommend checking out this project

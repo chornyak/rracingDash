@@ -37,11 +37,12 @@ You can save money by opting for a cheaper model.
 
 **Solder connections:**
 
-MICRO => Nextion
-GND   =>   GND
-VCC   =>   5V
-RX1   =>   TX
-TX0   =>   RX
+
+	MICRO => Nextion
+	GND   =>   GND 
+	VCC   =>   5V 
+	RX1   =>   TX 
+	TX0   =>   RX 
 
 **Note:** You must also solder the J1 jumper to ensure a full 5v otherwise
 the Micro regulates VCC to 4.9v and the Nextion screen will not power on.

@@ -80,6 +80,10 @@ Import the mapping settings using the file in /SimHub/
 If you are succesful the session clock on the display should begin 
 updating as it is set to display the current time. 
 
+**Interacting:**  Tap the screen to switch between dashes (Title Screen, Detailed, Simple)
+The title screen includes a sleep button to turn of the TFT when not in game. To turn it
+back on simply touch the screen while it is asleep to wake it.
+
 ## Optional: Print the included enclosure
 
 .stl Files are included in the /stl/ folder of a simple enclosure

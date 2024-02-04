@@ -1,6 +1,5 @@
 # rracingDash
 ## SimHub Custom Serial Device Dash – Nextion 5.0" / Arduino Micro
-----
 
 Quickstart Guide
 Follow the three steps below to get up and running with the rracingDash
@@ -14,7 +13,6 @@ https://github.com/cdemetriadis/lovely-dashboard
 
 
 ## Hardware Requirements
-----
 
 **Arduino Micro used:**
 https://www.amazon.com/dp/B01KJR41J4
@@ -32,7 +30,6 @@ You can save money by opting for a cheaper model.
 
 
 ## 1. Configure Arduino Micro
-----
 
 
 **Solder connections:**
@@ -51,7 +48,6 @@ Upload the sketch from /ArduinoMicro_SimHubSerial/
 
 
 ## 2. Configure Nextion Display
-----
 
 **Load .TFT via MicroSD**
 Simply place the .TFT file from the /Nextion/ folder on a MicroSD 
@@ -69,7 +65,6 @@ Roboto Bold and available from Google: https://fonts.google.com/specimen/Roboto
 
 
 ## 3. Configure SimHub
-----
 
 Go to Settings -> Plugins and enable "Custom serial devices"
 
@@ -86,7 +81,6 @@ If you are succesful the session clock on the display should begin
 updating as it is set to display the current time. 
 
 ## 4. Optional: Print the included enclosure
-----
 
 .stl Files are included in the /stl/ folder of a simple enclosure
 that matches the Fanatec CSL DD aesthetic. 

@@ -19,15 +19,19 @@ void setup() {
   We must establish both and transfer messages for the Nextion 
   to see SimHub's output.
   
+  
+  
   */
 
   Serial.begin(baud);  //SimHub <-> USB/Micro
-  Serial1.begin(baud); //USB/Micro <-> Nextion
+  Serial1.begin(baud); //USB/Micro <-> Nextion  //If Running/Testing on an Uno remove this
 
 }
 
 void loop() {
   
+  
+  //If running/testing on an Uno just use while(Serial.available() >0)
   while ((Serial1.available() > 0) && (Serial.available() > 0))
   {
     //Read the serial buffer coming over USB from SimHub
@@ -46,6 +50,7 @@ void loop() {
 
     //If you want to use | in your screen data you can simply change this character 
     //to something else and ensure your messages in SimHub use the new character
+    //If running/testing on an Uno change the next 4 Serial1's to just Serial
     if (inByte == '|')
     {
         Serial1.write(0xff);

@@ -2,10 +2,26 @@
 ## SimHub Custom Serial Device Dash – Nextion 5.0" / Arduino Micro
 
 Quickstart Guide
-Follow the three steps below to get up and running with the rracingDash
+Follow the three steps below to get up and running with the rracingDash.
 
-Design inspired by Lovely-Dashboard. All graphics in rracingDash were 
-created from scratch but follow the same design principles. If you want 
+rracingDash is designed to run on a Nextion 5" TFT display connected to SimHub
+via an Arduino Micro. I originally attempted to connect via a USB-TTL adapter
+but the SimHub Nextion plugin caused all dynamic variables (e.g. Time, RPM) to
+flicker as they updated making the dash unusable. 
+ 
+This led me to learn SimHub no longer supports Nextion Displays and like me, 
+you are probably here because you watched a youtube video and ordered the screen 
+only to then realize the video is 3 years old and no longer relevant. This project 
+is to show there is in fact a way. By being Arduino based the sketch can be modified
+to support additional LEDs and other hardware easily. 
+
+Proof of concept running on an Arduino Uno: https://www.youtube.com/shorts/h1ZTXwlqrbo
+Note: Review sketch comments on specific changes required for the Micro.
+
+Final product using the hardware outline belowe: https://www.youtube.com/watch?v=PJmJ7qeRTEA
+
+The dash UI design is inspired by Lovely-Dashboard. All graphics in rracingDash 
+were created from scratch but follow the same design principles. If you want 
 a more feature-rich dash option I highly recommend checking out this project
 but it requires different hardware: 
 
@@ -14,7 +30,9 @@ https://github.com/cdemetriadis/lovely-dashboard
 
 ## Hardware Requirements
 
-**Arduino Micro used:**
+Below is the exact hardware ordered:
+
+**Arduino Micro:**
 https://www.amazon.com/dp/B01KJR41J4
 
 **Nextion 5" Intelligent Screen 800x480px**
